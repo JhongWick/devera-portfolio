@@ -237,6 +237,10 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem)
   color: var(--accent); line-height: 1.8; padding-top: 0.4rem;
   border-right: 1px solid var(--line); padding-right: clamp(1rem, 3vw, 2rem);
 }
+.case-year {
+  display: block; margin-top: 0.9rem; color: var(--muted);
+  font-size: 0.66rem; letter-spacing: 0.12em; white-space: nowrap;
+}
 .case-body h3 {
   font-family: var(--serif); font-weight: 600;
   font-size: clamp(1.4rem, 2.6vw, 1.9rem); margin-bottom: 0.3rem;
@@ -327,4 +331,5 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem)
   .case { grid-template-columns: 1fr; gap: 0.8rem; }
   .case-id { border-right: none; border-bottom: 1px solid var(--line); padding-bottom: 0.6rem; }
   .case-id br { display: none; }
+  .case-year { display: inline; margin: 0 0 0 1rem; }
 }
