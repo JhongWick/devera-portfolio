@@ -253,6 +253,13 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem)
   padding: 0.3rem 0.7rem; border-radius: 2px;
 }
 
+.case-group { margin: 4rem 0 1.6rem; }
+.case-group-label {
+  font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.22em;
+  color: var(--accent);
+}
+.case-group-sub { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
+
 /* ---- contact ---- */
 .contact { text-align: left; }
 .contact-lede {
