@@ -260,6 +260,11 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem)
 }
 .case-group-sub { color: var(--muted); font-size: 0.9rem; margin-top: 0.4rem; }
 
+.section-note {
+  color: var(--muted); font-size: 0.9rem; max-width: 40rem;
+  margin: -1.4rem 0 2.4rem;
+}
+
 /* ---- contact ---- */
 .contact { text-align: left; }
 .contact-lede {
