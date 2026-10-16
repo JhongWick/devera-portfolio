@@ -333,3 +333,35 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 clamp(1.25rem, 5vw, 2.5rem)
   .case-id br { display: none; }
   .case-year { display: inline; margin: 0 0 0 1rem; }
 }
+
+/* ---- case exhibits (project screenshots) ---- */
+.case-exhibit {
+  margin-top: 1.5rem; max-width: 44rem;
+  border: 1px solid var(--line); border-radius: 4px;
+  background: var(--panel); overflow: hidden;
+}
+.case-exhibit figcaption {
+  display: flex; justify-content: space-between; gap: 1rem;
+  font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted);
+  padding: 0.5rem 0.9rem; border-bottom: 1px solid var(--line);
+}
+.case-exhibit figcaption .exhibit-no { color: var(--accent); }
+.case-exhibit img {
+  display: block; width: 100%; height: auto;
+  filter: saturate(0.92); transition: filter 0.3s;
+}
+.case:hover .case-exhibit img { filter: saturate(1); }
+.case-exhibit--tall img { max-height: 430px; object-fit: cover; object-position: top; }
+
+/* ---- subject photo (about card) ---- */
+.about-photo {
+  margin-bottom: 1.4rem; border: 1px solid var(--line);
+  border-radius: 4px; overflow: hidden; background: var(--panel-2);
+}
+.about-photo img { display: block; width: 100%; height: auto; filter: grayscale(0.15); }
+.about-photo figcaption {
+  font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--muted);
+  padding: 0.45rem 0.9rem; border-top: 1px solid var(--line);
+}
